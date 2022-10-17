@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 2.8.12)
+project(HESS_HPC)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+
+set(CMAKE_CXX_STANDARD 14)
+
+find_package(MPI REQUIRED)
+if (MPI_FOUND)
+    set(CMAKE_CXX_COMPILER mpicxx)
+    add_executable(hess_hpc main.cc)
+endif (MPI_FOUND)
