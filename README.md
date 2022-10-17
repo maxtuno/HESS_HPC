@@ -36,4 +36,6 @@ Note: order ignored only for easy compatibility with DIMACS format.
     sys     0m0.395s
 
     python3 plot_tsp.py 1000.tsp.sol
+    
+[<img src="https://github.com/maxtuno/HESS_HPC/blob/main/bin/1000.tsp.sol_tour.png">](https://twitter.com/maxtuno)
   
