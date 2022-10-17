@@ -1,7 +1,7 @@
 # HESS_HPC
 An HPC implementación of HESS algorithm for TSP.
 
-    usage: sh hess_hpc.sh instance.tsp number_of_nodes loggin=[0|1]
+    usage: sh hess_hpc.sh instance.tsp number_of_nodes logs=[0|1]
   
 # Format
 
